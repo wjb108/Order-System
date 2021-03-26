@@ -6,8 +6,8 @@ Taco order system for pickup orders. Will render taco image, title, price, quant
 
 ## Wireframes
 
-<img src="./src/Product Page.png"/>
-<img src="./src/Order Page.png"/>
+<img src="./tacos-order-system/src/Product Page.png"/>
+<img src="./tacos-order-system/src/Order Page.png"/>
 
 ## Component Hierarchy
 
@@ -21,7 +21,7 @@ Components (need six!)
 - Counter (separate or in other component?)
 - Order Sent
 
-<img src="./src/Components Chart.png">
+<img src="./tacos-order-system/src/Components Chart.png">
 ## API and Data Sample
 
 Airtable API
