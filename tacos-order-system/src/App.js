@@ -2,6 +2,7 @@ import axios from 'axios';
 import './App.css';
 import {baseURL, config} from "./services/index"
 import {useEffect} from "react"
+import TacosList from "./components/TacosList"
 
 function App() {
 
