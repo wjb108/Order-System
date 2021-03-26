@@ -52,6 +52,40 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 }
 ```
 
+```json
+{
+"records" [
+  {
+    "createdTime": "2021-03-26T13:13:26.000Z",
+    "fields": {
+      "title": "Pollo Yucateco Taco",
+      "price": "5",
+      "description": "Chicken marinated in hot recado rojo, perfectly ro… with refried beans and tomatillo-avocado salsa. "
+      },
+    "id": "recJqpfNkDeIknw4t"
+    },
+  {
+    "createdTime": "2021-03-26T13:13:26.000Z",
+    "fields": {
+      "title": "Al Pastor Taco",
+      "price": "5",
+      "description": "Thinly sliced, marinated Heritage pork served with cilantro, onions, and roasted pineapple."
+      },
+    "id": "recxXi7DVoOSmyz3P"
+    },
+  {
+    "createdTime": "2021-03-26T13:13:26.000Z",
+    "fields": {
+      "title": "Carnitas Taco",
+      "price": "5",
+      "description": "Slow-roasted heritage pork and tomatillo-avocado s…pped with cilantro, onions, and spicy escabeche."
+      },
+    "id": "recyrCZRNtjQmolzO"
+    }
+]
+}
+```
+
 ### MVP/PostMVP
 
 The functionality will then be divided into two separate lists: MVP and PostMVP. Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.
