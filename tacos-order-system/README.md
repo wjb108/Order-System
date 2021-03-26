@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Taco order system to add tacos to shopping cart.
+Taco order system for pickup order to add tacos to shopping cart. Will render taco image, title, price, quantity, description, and button to add the taco to your cart. When you click add to cart, the cart in the navbar will update with a counter to reflect the number of items in the cart. The cart page will be a different visual representation of the data object of the tacos selected that you will pass through props. Total price and quantity will be displayed and you can submit order that will display a separate page thank you for your order.
 
 ## Wireframes
 
@@ -10,6 +10,16 @@ Taco order system to add tacos to shopping cart.
 <img src="./src/Order Page.png"/>
 
 ## Component Hierarchy
+
+App
+
+Components (need six!)
+
+- Navbar
+- Tacos List
+- Taco Card
+- Counter (separate or in other component?)
+- Order Sent
 
 <img src="./src/Components Chart.png">
 ## API and Data Sample
@@ -82,7 +92,7 @@ Pattern recognition
 
 ### Weaknesses:
 
-Component Hierarchy
+Component Hierarchy and confusion with components vs. routes
 Syntax dealing with objects
 
 ### Opportunities:
