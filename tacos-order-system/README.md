@@ -54,6 +54,7 @@ Airtable API
 
 - Render taco products data on page
 - Allow user to add taco to shopping cart with counter
+- Submit order
 
 #### PostMVP
 
