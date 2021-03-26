@@ -1,13 +1,13 @@
-# Order-System
+# Taco-Order-System
 
 ## Project Description
 
-CRUD order system to add products to shopping cart.
+Order system to add products to shopping cart.
 
 ## Wireframes
 
-<img src="./Product Page.png"/>
-<img src="./Order Page.png"/>
+<img src="./src/Product Page.png"/>
+<img src="./src/Order Page.png"/>
 
 ## Component Hierarchy
 
