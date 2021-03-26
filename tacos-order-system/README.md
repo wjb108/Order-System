@@ -19,41 +19,6 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 ```json
 {
-  "records": [
-    {
-      "id": "recONRzIUTuZ5lXaF",
-      "fields": {
-        "author": "Liz Yrineo",
-        "setup": "Why did the tomato turn red?",
-        "punchline": "Because it saw the salad dressing!"
-      },
-      "createdTime": "2020-11-30T16:03:09.000Z"
-    },
-    {
-      "id": "rec3oYZ5Tp0AIDsKe",
-      "fields": {
-        "author": "Rachel Moskowitz",
-        "setup": "What did the green grape say to the red grape?",
-        "punchline": "Breathe, idiot, breathe!"
-      },
-      "createdTime": "2020-11-30T16:03:09.000Z"
-    },
-    {
-      "id": "recA34tOaoE1IVeC1",
-      "fields": {
-        "author": "Gary Grant",
-        "setup": "How do you make holy water?",
-        "punchline": "You boil the hell out of it!"
-      },
-      "createdTime": "2020-11-30T16:03:09.000Z"
-    }
-  ],
-  "offset": "recA34tOaoE1IVeC1"
-}
-```
-
-```json
-{
 "records" [
   {
     "createdTime": "2021-03-26T13:13:26.000Z",
