@@ -32,6 +32,7 @@ function App() {
               {taco.fields.price}
               <br></br>
               {taco.fields.description}
+              <button type="submit">Add To Cart</button>
             </div>
           </div>
         );
