@@ -25,8 +25,12 @@ function App() {
       {tacos.map((taco) => {
         return (
         <div key={taco.id} id={taco.id}>
-          {taco.fields.title}
-          {taco.fields.price}
+            <img src={taco.fields.image} />
+            <br></br>
+            {taco.fields.title}
+            <br></br>
+            {taco.fields.price}
+            <br></br>
           {taco.fields.description}
         </div>
         )
