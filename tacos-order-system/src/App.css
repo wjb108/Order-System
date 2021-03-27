@@ -1,3 +1,8 @@
+.cart-image {
+  height: 100px;
+  width: 100px;
+  float: right;
+}
 .taco-container {
   display: flex;
   flex-direction: column;
