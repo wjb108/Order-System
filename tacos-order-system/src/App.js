@@ -21,8 +21,12 @@ function App() {
     console.log(response.data.records);
   }
   function handleClick(event) {
-    console.log(event.target)
-    console.log(setCount(event.target + 1))
+    // console.log(event.target)
+    // console.log(setCount(event.target + 1))
+    // setCount(event.target.value + 1)
+    setCount((prevState) => {
+      return prevState + 1
+    })
   }
   return (
     <div className="App">
@@ -34,7 +38,7 @@ function App() {
           return (
             <div className="taco-container" key={taco.id}>
               <div className="taco-image-container">
-                <img className="taco-image" src={taco.fields.image} />
+                <img className="taco-image" src={taco.fields.image} alt="taco"/>
                 <br></br>
                 {taco.fields.title}
                 <br></br>
