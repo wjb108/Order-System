@@ -1,21 +1,47 @@
-.cart-image {
-  background-color: greenyellow;
-  height: 100px;
-  width: 100px;
-}
-.cart-container {
+.nav-cart-container {
   background-color: royalblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.nav-container {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+.cart-count {
+  background-color: violet;
+  text-decoration: none;
+  height: 50px;
+}
+.cart-count-text {
+  text-decoration: none;
+  text-align: right;
+  margin-right: 20px;
 }
 
-.taco-container {
-  /* background-color: orange; */
-  margin: 50px 10px 20px 10px;
+.cart-image {
+  background-color: greenyellow;
+  height: 50px;
+  width: 100px;
 }
+
+.cart-image-container {
+  background-color: greenyellow;
+  height: 50px;
+  width: 100px;
+}
+
 .tacos-container {
   background-color: yellow;
   margin: 50px 10px 20px 10px;
   display: flex;
   flex-direction: row;
+}
+
+.taco-container {
+  /* background-color: orange; */
+  margin: 50px 10px 20px 10px;
 }
 
 .taco-image-container {

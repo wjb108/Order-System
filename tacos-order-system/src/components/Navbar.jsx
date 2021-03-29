@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
-    <div className="cart-container">
+    <div className="nav-cart-container">
       <Link to="/cart">
         <div className="nav-container">
           <div className="cart-count">
-            <h1>{props.count}</h1>
+            <h2 className="cart-count-text">{props.count}</h2>
           </div>
           <div className="cart-image-container">
             <img
