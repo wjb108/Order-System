@@ -1,20 +1,43 @@
 .cart-image {
+  background-color: greenyellow;
   height: 100px;
   width: 100px;
-  float: right;
 }
+.cart-container {
+  background-color: royalblue;
+}
+
 .taco-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  /* background-color: orange; */
+  margin: 50px 10px 20px 10px;
 }
-.taco-image-container {
+.tacos-container {
+  background-color: yellow;
+  margin: 50px 10px 20px 10px;
   display: flex;
+  flex-direction: row;
+}
+
+.taco-image-container {
+  background-color: red;
+  /* margin: 50px 10px 20px 10px; */
+
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+}
+.taco-text-container {
+  background-color: green;
+  /* margin: 50px 10px 20px 10px; */
+
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; */
 }
 
 .taco-image {
+  /* background-color: pink; */
+
   height: 300px;
   width: 300px;
 }
