@@ -1,8 +1,16 @@
+import axios from "axios";
 import React from "react";
 import { Link } from "react-router-dom";
+import { tacosBaseURL, orderBaseURL, config } from "../services/index";
 
 export default function TacoOrderCard({ orderTacos }) {
   console.log(Object.keys(orderTacos));
+  console.log(JSON.stringify(orderTacos));
+
+  async function sendOrder(submittedOrder) {
+    const stringObject = JSON.stringify(submittedOrder);
+    await axios.post(orderBaseURL, { fields: stringObject }, config);
+  }
 
   const orderTotal = Object.keys(orderTacos).reduce((acc, key) => {
     const quantity = orderTacos[key].quantity;
@@ -14,7 +22,11 @@ export default function TacoOrderCard({ orderTacos }) {
       <div className="order-taco-submit-container">
         <h2>{`Order Total: $${orderTotal}.00 `}</h2>
         <div className="order-taco-submit-button">
-          <button className="order-taco-submit-inner-button" type="submit">
+          <button
+            className="order-taco-submit-inner-button"
+            type="submit"
+            onClick={() => sendOrder({ orderTacos })}
+          >
             Submit Order
           </button>
         </div>

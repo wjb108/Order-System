@@ -1,6 +1,6 @@
 import axios from "axios";
 import "./App.css";
-import { baseURL, config } from "./services/index";
+import { tacosBaseURL, orderBaseURL, config } from "./services/index";
 import { useEffect, useState } from "react";
 import TacosList from "./components/TacosList";
 import Navbar from "./components/Navbar.jsx";
@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   async function getTacoData() {
-    let response = await axios.get(baseURL, config);
+    let response = await axios.get(tacosBaseURL, config);
     setTacos(response.data.records);
   }
 
