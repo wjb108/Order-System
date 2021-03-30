@@ -1,11 +1,11 @@
 import axios from "axios";
 import "./App.css";
-import { tacosBaseURL, orderBaseURL, config } from "./services/index";
+import { tacosBaseURL, config } from "./services/index";
 import { useEffect, useState } from "react";
-import TacosList from "./components/TacosList";
 import Navbar from "./components/Navbar.jsx";
 import { Route } from "react-router-dom";
 import TacoOrderCard from "./components/TacoOrderCard";
+import Receipt from "./components/Receipt";
 
 function App() {
   const [tacos, setTacos] = useState([]);
@@ -39,8 +39,11 @@ function App() {
       <Route>
         <Navbar count={count} />
       </Route>
-      <Route exact path="/cart">
+      <Route path="/cart">
         <TacoOrderCard orderTacos={cart} />
+      </Route>
+      <Route path="/receipt">
+        <Receipt />
       </Route>
       <Route exact path="/">
         <div className="tacos-container">

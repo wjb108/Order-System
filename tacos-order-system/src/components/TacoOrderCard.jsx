@@ -1,14 +1,12 @@
 import axios from "axios";
-import React from "react";
-import { Link } from "react-router-dom";
-import { tacosBaseURL, orderBaseURL, config } from "../services/index";
-import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
+import { orderBaseURL, config } from "../services/index";
 
 export default function TacoOrderCard({ orderTacos }) {
   // console.log(Object.keys(orderTacos));
   // console.log(JSON.stringify(orderTacos));
 
-  const [orderNumber, setOrderNumber] = useState({});
+  const history = useHistory();
 
   async function sendOrder(submittedOrder) {
     const stringObject = JSON.stringify(submittedOrder);
@@ -17,16 +15,7 @@ export default function TacoOrderCard({ orderTacos }) {
       { fields: { orderid: stringObject } },
       config
     );
-  }
-
-  useEffect(() => {
-    retrieveOrder();
-  }, []);
-
-  async function retrieveOrder() {
-    let response = await axios.get(orderBaseURL, config);
-    console.log(response);
-    // setOrderNumber(response.data.records);
+    history.push("/receipt");
   }
 
   const orderTotal = Object.keys(orderTacos).reduce((acc, key) => {
