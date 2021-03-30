@@ -3,15 +3,16 @@ import { Link } from "react-router-dom";
 
 export default function TacoOrderCard({ orderTacos }) {
   console.log(Object.keys(orderTacos));
+
+  const orderTotal = Object.keys(orderTacos).reduce((acc, key) => {
+    const quantity = orderTacos[key].quantity;
+    const price = orderTacos[key].fields.price;
+    return acc + quantity * Number(price);
+  }, 0);
   return (
     <div className="order-page-container">
       <div className="order-taco-submit-container">
-        <h2>Order Total: </h2>
-        {Object.keys(orderTacos).map((key) => {
-          const quantity = orderTacos[key].quantity;
-          const price = orderTacos[key].fields.price;
-          return <div>{quantity * Number(price)}</div>;
-        })}
+        <h2>{`Order Total: $${orderTotal}.00 `}</h2>
         <div className="order-taco-submit-button">
           <button className="order-taco-submit-inner-button" type="submit">
             Submit Order
