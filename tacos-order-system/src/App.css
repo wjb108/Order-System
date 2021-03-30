@@ -70,6 +70,7 @@ a:link {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  padding-bottom: 40px;
 }
 .order-taco-submit-container {
   background-color: black;
@@ -86,6 +87,10 @@ a:link {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+}
+.order-taco-submit-inner-button {
+  border: none;
+  padding: 10px;
 }
 .order-tacos-container {
   background-color: yellow;

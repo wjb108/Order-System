@@ -2,14 +2,31 @@ import axios from "axios";
 import React from "react";
 import { Link } from "react-router-dom";
 import { tacosBaseURL, orderBaseURL, config } from "../services/index";
+import { useEffect, useState } from "react";
 
 export default function TacoOrderCard({ orderTacos }) {
-  console.log(Object.keys(orderTacos));
-  console.log(JSON.stringify(orderTacos));
+  // console.log(Object.keys(orderTacos));
+  // console.log(JSON.stringify(orderTacos));
+
+  const [orderNumber, setOrderNumber] = useState({});
 
   async function sendOrder(submittedOrder) {
     const stringObject = JSON.stringify(submittedOrder);
-    await axios.post(orderBaseURL, { fields: stringObject }, config);
+    await axios.post(
+      orderBaseURL,
+      { fields: { orderid: stringObject } },
+      config
+    );
+  }
+
+  useEffect(() => {
+    retrieveOrder();
+  }, []);
+
+  async function retrieveOrder() {
+    let response = await axios.get(orderBaseURL, config);
+    console.log(response);
+    // setOrderNumber(response.data.records);
   }
 
   const orderTotal = Object.keys(orderTacos).reduce((acc, key) => {
@@ -17,6 +34,7 @@ export default function TacoOrderCard({ orderTacos }) {
     const price = orderTacos[key].fields.price;
     return acc + quantity * Number(price);
   }, 0);
+
   return (
     <div className="order-page-container">
       <div className="order-taco-submit-container">
