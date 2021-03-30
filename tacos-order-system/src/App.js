@@ -58,11 +58,13 @@ function App() {
                   <br></br>
                   {taco.fields.title}
                   <br></br>
-                  {taco.fields.price}
+                  <br></br>
+                  {`$${taco.fields.price}.00`}
                   <br></br>
                   {taco.fields.quantity}
                   <br></br>
                   {taco.fields.description}
+                  <br></br>
                   <br></br>
                   <button onClick={() => handleClick(taco)} type="submit">
                     Add To Cart

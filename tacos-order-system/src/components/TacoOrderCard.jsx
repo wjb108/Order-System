@@ -4,21 +4,30 @@ import { Link } from "react-router-dom";
 export default function TacoOrderCard({ orderTacos }) {
   // console.log(Object.keys(orderTacos));
   return (
-    <div className="order-cart-container">
+    <div className="order-tacos-container">
       {Object.keys(orderTacos).map((key) => {
         const taco = orderTacos[key].fields;
         return (
-          <div>
-            <br></br>
-            <img src={taco.image} />
-            <br></br>
-            {taco.title}
-            <br></br>
-            {taco.price}
-            <br></br>
-            {orderTacos[key].quantity}
-            <br></br>
-            {taco.description}
+          <div className="order-taco-container">
+            <div className="order-taco-image-container">
+              <img className="order-taco-image" src={taco.image} alt="taco" />
+            </div>
+            <div className="order-taco-text-container">
+              <div className="order-taco-text">
+                <br></br>
+                <div className="order-taco-text-title">
+                  {`Name: ${taco.title}`}
+                </div>
+                <br></br>
+                <div className="order-taco-text-quantity">
+                  {`Quantity: ${orderTacos[key].quantity}`}
+                </div>
+                <br></br>
+                <div className="order-taco-text-price">
+                  {`Price: $${taco.price}.00`}
+                </div>
+              </div>
+            </div>
           </div>
         );
       })}
