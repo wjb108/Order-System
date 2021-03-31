@@ -2,13 +2,21 @@
   background-color: royalblue;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .nav-container {
   background-color: red;
   display: flex;
   flex-direction: column;
 }
+
+.nav-orders-list {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px 0px 20px;
+}
+
 .cart-count {
   background-color: violet;
   text-decoration: none;

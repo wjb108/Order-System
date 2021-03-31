@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 export default function Navbar(props) {
   return (
     <div className="nav-cart-container">
+      <div className="nav-orders-list">
+        <Link to="/receipt">See What Others Are Ordering</Link>
+      </div>
       <Link to="/cart">
         <div className="nav-container">
           <div className="cart-count">
