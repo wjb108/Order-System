@@ -1,27 +1,27 @@
 .nav-cart-container {
-  background-color: royalblue;
+  /* background-color: royalblue; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .nav-container {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
 }
 
 .nav-orders-list {
-  background-color: orange;
+  /* background-color: orange; */
   display: flex;
   flex-direction: column;
   padding: 40px 0px 0px 20px;
 }
 .nav-orders-list-text {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 
 .cart-count {
-  background-color: violet;
+  /* background-color: violet; */
   text-decoration: none;
   height: 50px;
 }
@@ -36,19 +36,19 @@ a:link {
 }
 
 .cart-image {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   height: 50px;
   width: 100px;
 }
 
 .cart-image-container {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   height: 50px;
   width: 100px;
 }
 
 .tacos-container {
-  background-color: yellow;
+  /* background-color: yellow; */
   margin: 50px 10px 50px 10px;
   display: flex;
   flex-direction: row;
@@ -62,11 +62,11 @@ a:link {
 }
 
 .taco-image-container {
-  background-color: red;
+  /* background-color: red; */
   width: 400px;
 }
 .taco-text-container {
-  background-color: green;
+  /* background-color: green; */
   width: 380px;
   padding: 10px 0px 10px 20px;
 }
@@ -77,23 +77,23 @@ a:link {
 }
 
 .order-page-container {
-  background-color: purple;
+  /* background-color: purple; */
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   padding-bottom: 40px;
 }
 .order-taco-submit-container {
-  background-color: black;
+  /* background-color: black; */
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
 }
 .order-taco-submit-button {
-  background-color: orange;
+  /* background-color: orange; */
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -104,18 +104,18 @@ a:link {
   padding: 10px;
 }
 .order-tacos-container {
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .order-taco-container {
-  background-color: orange;
+  /* background-color: orange; */
   width: 50%;
   margin: 50px 10px 20px 10px;
   display: flex;
 }
 
 .order-taco-image-container {
-  background-color: red;
+  /* background-color: red; */
   width: 300px;
 }
 
@@ -125,14 +125,14 @@ a:link {
 }
 
 .order-taco-text-container {
-  background-color: green;
+  /* background-color: green; */
   width: 380px;
   padding: 10px 0px 10px 20px;
   display: flex;
   flex-direction: column;
 }
 .order-taco-text {
-  background-color: red;
+  /* background-color: red; */
   width: 360px;
   height: 100%;
   padding: 0px 0px 10px 20px;
@@ -143,14 +143,19 @@ a:link {
 }
 
 .receipt-taco-container {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .receipt-taco-text-container {
-  background-color: purple;
-  width: 50%;
+  /* background-color: purple; */
+  border: dotted black;
   text-align: center;
+}
+
+.receipt-taco-text {
+  /* background-color: orange; */
+  padding: 20px;
 }

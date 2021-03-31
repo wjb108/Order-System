@@ -5,6 +5,9 @@ export default function Navbar(props) {
   return (
     <div className="nav-cart-container">
       <div className="nav-orders-list">
+        <Link to="/">
+          <div className="nav-home-text">Menu</div>
+        </Link>
         <Link to="/receipt">
           <div className="nav-orders-list-text">Kitchen View</div>
         </Link>
