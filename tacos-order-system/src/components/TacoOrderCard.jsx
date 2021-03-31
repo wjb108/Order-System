@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import { orderBaseURL, config } from "../services/index";
+import CartItem from "../components/CartItem";
 
 export default function TacoOrderCard({ orderTacos }) {
   // console.log(Object.keys(orderTacos));
@@ -40,32 +41,9 @@ export default function TacoOrderCard({ orderTacos }) {
         </div>
       </div>
       <div className="order-tacos-container">
-        {Object.keys(orderTacos).map((key) => {
-          const taco = orderTacos[key].fields;
-          return (
-            <div className="order-taco-container">
-              <div className="order-taco-image-container">
-                <img className="order-taco-image" src={taco.image} alt="taco" />
-              </div>
-              <div className="order-taco-text-container">
-                <div className="order-taco-text">
-                  <br></br>
-                  <div className="order-taco-text-title">
-                    {`Name: ${taco.title}`}
-                  </div>
-                  <br></br>
-                  <div className="order-taco-text-quantity">
-                    {`Quantity: ${orderTacos[key].quantity}`}
-                  </div>
-                  <br></br>
-                  <div className="order-taco-text-price">
-                    {`Subtotal: $${taco.price * orderTacos[key].quantity}.00`}
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+        {Object.keys(orderTacos).map((key) => (
+          <CartItem item={orderTacos[key]} />
+        ))}
       </div>
     </div>
   );

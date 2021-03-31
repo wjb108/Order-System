@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar.jsx";
 import { Route } from "react-router-dom";
 import TacoOrderCard from "./components/TacoOrderCard";
 import Receipt from "./components/Receipt";
+import MenuItem from "./components/MenuItem";
 import ReceiptById from "./components/ReceiptById";
 
 function App() {
@@ -51,35 +52,7 @@ function App() {
       </Route>
       <Route exact path="/">
         <div className="tacos-container">
-          {tacos.map((taco) => {
-            return (
-              <div className="taco-container" key={taco.id}>
-                <div className="taco-image-container">
-                  <img
-                    className="taco-image"
-                    src={taco.fields.image}
-                    alt="taco"
-                  />
-                </div>
-                <div className="taco-text-container">
-                  <br></br>
-                  {taco.fields.title}
-                  <br></br>
-                  <br></br>
-                  {`$${taco.fields.price}.00`}
-                  <br></br>
-                  {taco.fields.quantity}
-                  <br></br>
-                  {taco.fields.description}
-                  <br></br>
-                  <br></br>
-                  <button onClick={() => handleClick(taco)} type="submit">
-                    Add To Cart
-                  </button>
-                </div>
-              </div>
-            );
-          })}
+          {tacos.map((taco) => <MenuItem taco={taco} handleClick={handleClick}/> )}
         </div>
       </Route>
     </div>
