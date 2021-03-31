@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar.jsx";
 import { Route } from "react-router-dom";
 import TacoOrderCard from "./components/TacoOrderCard";
 import Receipt from "./components/Receipt";
+import ReceiptById from "./components/ReceiptById";
 
 function App() {
   const [tacos, setTacos] = useState([]);
@@ -42,8 +43,11 @@ function App() {
       <Route path="/cart">
         <TacoOrderCard orderTacos={cart} />
       </Route>
-      <Route path="/receipt">
+      <Route exact path="/receipt">
         <Receipt />
+      </Route>
+      <Route path="/receipt/:id">
+        <ReceiptById />
       </Route>
       <Route exact path="/">
         <div className="tacos-container">

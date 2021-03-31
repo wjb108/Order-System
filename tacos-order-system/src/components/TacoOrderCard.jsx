@@ -10,12 +10,13 @@ export default function TacoOrderCard({ orderTacos }) {
 
   async function sendOrder(submittedOrder) {
     const stringObject = JSON.stringify(submittedOrder);
-    await axios.post(
+    const sendOrderAirtable = await axios.post(
       orderBaseURL,
       { fields: { orderid: stringObject } },
       config
     );
-    history.push("/receipt");
+    console.log(sendOrderAirtable);
+    history.push("/receipt/" + sendOrderAirtable.data.id);
   }
 
   const orderTotal = Object.keys(orderTacos).reduce((acc, key) => {
