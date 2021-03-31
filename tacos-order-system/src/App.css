@@ -141,3 +141,16 @@ a:link {
   justify-content: space-around;
   align-content: center;
 }
+
+.receipt-taco-container {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.receipt-taco-text-container {
+  background-color: purple;
+  width: 50%;
+  text-align: center;
+}

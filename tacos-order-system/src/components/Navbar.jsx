@@ -6,9 +6,7 @@ export default function Navbar(props) {
     <div className="nav-cart-container">
       <div className="nav-orders-list">
         <Link to="/receipt">
-          <div className="nav-orders-list-text">
-            See What Others Are Ordering
-          </div>
+          <div className="nav-orders-list-text">Kitchen View</div>
         </Link>
       </div>
       <Link to="/cart">

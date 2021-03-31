@@ -28,29 +28,29 @@ export default function ReceiptById() {
   }, 0);
 
   return (
-    <div className="order-taco-container">
-      <div className="order-taco-text-container">
-        <div className="order-taco-text">
+    <div className="receipt-taco-container">
+      <div className="receipt-taco-text-container">
+        <div className="receipt-taco-text">
           <br></br>
-          <div className="order-taco-text-title">{`Order Id: ${id}`}</div>
+          <div className="receipt-taco-text-title">{`Order Id: ${id}`}</div>
           <br></br>
-          <div className="order-tacos-container">
+          <div className="receipt-tacos-container">
             {Object.keys(order).map((key) => {
               const taco = order[key].fields;
               return (
-                <div className="order-taco-container">
-                  <div className="order-taco-text-container">
-                    <div className="order-taco-text">
+                <div className="receipt-taco-containerv1">
+                  <div className="receipt-taco-text-containerv2">
+                    <div className="receipt-taco-text">
                       <br></br>
-                      <div className="order-taco-text-title">
+                      <div className="receipt-taco-text-title">
                         {`Name: ${taco.title}`}
                       </div>
                       <br></br>
-                      <div className="order-taco-text-quantity">
+                      <div className="receipt-taco-text-quantity">
                         {`Quantity: ${order[key].quantity}`}
                       </div>
                       <br></br>
-                      <div className="order-taco-text-price">
+                      <div className="receipt-taco-text-price">
                         {`Subtotal: $${taco.price * order[key].quantity}.00`}
                       </div>
                     </div>
@@ -58,8 +58,8 @@ export default function ReceiptById() {
                 </div>
               );
             })}
-            <div className="order-taco-submit-container">
-              <h2>{`Order Total: $${orderTotal}.00 `}</h2>
+            <div className="receipt-taco-submit-container">
+              <h3>{`Order Total: $${orderTotal}.00 `}</h3>
             </div>
           </div>
         </div>
