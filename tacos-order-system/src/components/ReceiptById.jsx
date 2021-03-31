@@ -21,6 +21,12 @@ export default function ReceiptById() {
     setOrder(orderInfo);
   }
 
+  const orderTotal = Object.keys(order).reduce((acc, key) => {
+    const quantity = order[key].quantity;
+    const price = order[key].fields.price;
+    return acc + quantity * Number(price);
+  }, 0);
+
   return (
     <div className="order-taco-container">
       <div className="order-taco-text-container">
@@ -33,13 +39,6 @@ export default function ReceiptById() {
               const taco = order[key].fields;
               return (
                 <div className="order-taco-container">
-                  <div className="order-taco-image-container">
-                    <img
-                      className="order-taco-image"
-                      src={taco.image}
-                      alt="taco"
-                    />
-                  </div>
                   <div className="order-taco-text-container">
                     <div className="order-taco-text">
                       <br></br>
@@ -59,6 +58,9 @@ export default function ReceiptById() {
                 </div>
               );
             })}
+            <div className="order-taco-submit-container">
+              <h2>{`Order Total: $${orderTotal}.00 `}</h2>
+            </div>
           </div>
         </div>
       </div>

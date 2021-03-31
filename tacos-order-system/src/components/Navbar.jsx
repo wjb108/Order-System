@@ -5,7 +5,11 @@ export default function Navbar(props) {
   return (
     <div className="nav-cart-container">
       <div className="nav-orders-list">
-        <Link to="/receipt">See What Others Are Ordering</Link>
+        <Link to="/receipt">
+          <div className="nav-orders-list-text">
+            See What Others Are Ordering
+          </div>
+        </Link>
       </div>
       <Link to="/cart">
         <div className="nav-container">

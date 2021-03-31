@@ -16,6 +16,9 @@
   flex-direction: column;
   padding: 40px 0px 0px 20px;
 }
+.nav-orders-list-text {
+  background-color: greenyellow;
+}
 
 .cart-count {
   background-color: violet;
