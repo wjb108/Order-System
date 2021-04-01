@@ -96,6 +96,12 @@ a:visited {
   border: none;
   padding: 10px;
 }
+.order-taco-text-quantity-button {
+  /* background-color: green; */
+  border: none;
+  margin: 0px 3px 0px 3px;
+  padding: 5px 10px 5px 10px;
+}
 
 .taco-image {
   height: 300px;

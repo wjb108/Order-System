@@ -13,10 +13,18 @@ export default function CartItem(props) {
           <br></br>
           <div className="order-taco-text-quantity">
             {`Quantity: ${item.quantity} `}
-            <button onClick={() => handleClick(item)} type="submit">
+            <button
+              className="order-taco-text-quantity-button"
+              onClick={() => handleClick(item)}
+              type="submit"
+            >
               +
             </button>
-            <button onClick={() => handleClick(item, false)} type="submit">
+            <button
+              className="order-taco-text-quantity-button"
+              onClick={() => handleClick(item, false)}
+              type="submit"
+            >
               -
             </button>
           </div>
