@@ -81,6 +81,7 @@ a:link {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding-bottom: 40px;
 }
 .order-taco-submit-container {
