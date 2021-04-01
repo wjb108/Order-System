@@ -93,12 +93,10 @@ a:visited {
 }
 .taco-text-container-button {
   /* background-color: green; */
-  border: none;
   padding: 10px;
 }
 .order-taco-text-quantity-button {
   /* background-color: green; */
-  border: none;
   margin: 0px 3px 0px 3px;
   padding: 5px 10px 5px 10px;
 }
@@ -134,7 +132,6 @@ a:visited {
   justify-content: center;
 }
 .order-taco-submit-inner-button {
-  border: none;
   padding: 10px;
 }
 .order-tacos-container {

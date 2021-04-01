@@ -19,7 +19,7 @@ export default function Navbar(props) {
           <div className="cart-image-container">
             <img
               className="cart-image"
-              src="https://www.flaticon.com/svg/vstatic/svg/263/263142.svg?token=exp=1616876057~hmac=185b848123922a559da60352d4eefe8c"
+              src="https://www.flaticon.com/svg/vstatic/svg/263/263142.svg?token=exp=1617314097~hmac=28ed15a6a180c20e14cd536f23f0cd8d"
               alt="cart"
             />
           </div>
