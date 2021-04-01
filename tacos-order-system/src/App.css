@@ -100,6 +100,7 @@ a:visited {
 .taco-image {
   height: 300px;
   width: 400px;
+  border-radius: 75px;
 }
 
 .order-page-container {
@@ -152,6 +153,7 @@ a:visited {
 .order-taco-image {
   height: 200px;
   width: 300px;
+  border-radius: 50px;
 }
 
 .order-taco-text-container {
@@ -178,6 +180,7 @@ a:visited {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 20px 0px 20px 0px;
 }
 
 .receipt-taco-text-container {
@@ -189,6 +192,10 @@ a:visited {
 .receipt-taco-text {
   /* background-color: orange; */
   padding: 20px;
+}
+.receipt-taco-text-title {
+  /* background-color: orange; */
+  font-size: 17px;
 }
 
 .receipt-by-id-cart-container {

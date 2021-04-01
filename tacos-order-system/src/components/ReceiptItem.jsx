@@ -12,7 +12,9 @@ export default function ReceiptItem(props) {
       <div className="receipt-taco-text-container">
         <div className="receipt-taco-text">
           <br></br>
-          <div className="receipt-taco-text-title">{`Order Id: ${id}`}</div>
+          <b>
+            <div className="receipt-taco-text-title">{`Order Id: ${id}`}</div>
+          </b>
           <br></br>
           <div className="receipt-tacos-container">
             {Object.keys(order).map((key) => {
