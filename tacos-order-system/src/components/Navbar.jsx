@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import cart from "./shopping-cart.png";
 
 export default function Navbar(props) {
   return (
@@ -17,11 +18,7 @@ export default function Navbar(props) {
             <h2 className="cart-count-text">{props.count}</h2>
           </div>
           <div className="cart-image-container">
-            <img
-              className="cart-image"
-              src="../../shopping-cart.png"
-              alt="cart"
-            />
+            <img className="cart-image" src={cart} alt="cart" />
           </div>
         </div>
       </Link>
