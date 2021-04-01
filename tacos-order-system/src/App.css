@@ -94,11 +94,13 @@ a:visited {
 .taco-text-container-button {
   /* background-color: green; */
   padding: 10px;
+  border: 1px solid black;
 }
 .order-taco-text-quantity-button {
   /* background-color: green; */
   margin: 0px 3px 0px 3px;
   padding: 5px 10px 5px 10px;
+  border: 1px solid black;
 }
 
 .taco-image {
@@ -130,6 +132,7 @@ a:visited {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  border: 1px solid black;
 }
 .order-taco-submit-inner-button {
   padding: 10px;

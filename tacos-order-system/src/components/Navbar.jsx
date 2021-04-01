@@ -19,7 +19,7 @@ export default function Navbar(props) {
           <div className="cart-image-container">
             <img
               className="cart-image"
-              src="https://cdn1.iconfinder.com/data/icons/feather-2/24/shopping-cart-512.png"
+              src="../../shopping-cart.png"
               alt="cart"
             />
           </div>
