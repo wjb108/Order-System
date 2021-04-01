@@ -1,12 +1,16 @@
+html {
+  background-color: #fff8ec;
+}
+
 .nav-cart-container {
-  /* background-color: royalblue; */
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
+  /* position: fixed;
   width: 100%;
   top: 0;
-  background-color: white;
+  background-color: white; */
 }
 .nav-container {
   /* background-color: red; */
@@ -52,12 +56,17 @@ a:link {
 }
 
 .tacos-container {
-  /* background-color: yellow; */
-  margin: 50px 10px 50px 10px;
+  background-color: #fff8ec;
+
+  margin: 50px 10px 0px 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.App {
+  /* background-color: #fff8ec; */
 }
 
 .taco-container {
@@ -81,7 +90,7 @@ a:link {
 }
 
 .order-page-container {
-  /* background-color: purple; */
+  background-color: #fff8ec;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -151,7 +160,8 @@ a:link {
 }
 
 .receipt-taco-container {
-  /* background-color: red; */
+  background-color: #fff8ec;
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -166,4 +176,8 @@ a:link {
 .receipt-taco-text {
   /* background-color: orange; */
   padding: 20px;
+}
+
+.receipt-by-id-cart-container {
+  background-color: #fff8ec;
 }

@@ -22,5 +22,9 @@ export default function ReceiptById() {
     setOrder(orderInfo);
   }
 
-  return <ReceiptItem order={order} id={id} />;
+  return (
+    <div className="receipt-by-id-cart-container">
+      <ReceiptItem order={order} id={id} />
+    </div>
+  );
 }
