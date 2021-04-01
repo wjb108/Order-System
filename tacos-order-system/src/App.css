@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 html {
   background-color: #fff8ec;
+}
+
+* {
+  font-family: "Lato", sans-serif;
 }
 
 .nav-cart-container {
@@ -7,11 +13,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: white; */
 }
+
 .nav-container {
   /* background-color: red; */
   display: flex;
@@ -41,6 +44,11 @@ html {
 
 a:link {
   text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .cart-image {
@@ -82,6 +90,11 @@ a:link {
   /* background-color: green; */
   width: 380px;
   padding: 10px 0px 10px 20px;
+}
+.taco-text-container-button {
+  /* background-color: green; */
+  border: none;
+  padding: 10px;
 }
 
 .taco-image {

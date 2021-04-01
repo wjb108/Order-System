@@ -1,5 +1,4 @@
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { orderBaseURL, config } from "../services/index";
 import { useParams } from "react-router-dom";
@@ -16,7 +15,6 @@ export default function ReceiptById() {
 
   async function retrieveOrder() {
     let response = await axios.get(orderBaseURL + "/" + id, config);
-    console.log(response.data);
     const orderResponse = response.data.fields.orderid;
     const orderInfo = JSON.parse(orderResponse).orderTacos;
     setOrder(orderInfo);

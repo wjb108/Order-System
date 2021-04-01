@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function MenuItem(props) {
   const { taco, handleClick } = props;
   return (
@@ -19,7 +17,11 @@ export default function MenuItem(props) {
         {taco.fields.description}
         <br></br>
         <br></br>
-        <button onClick={() => handleClick(taco)} type="submit">
+        <button
+          className="taco-text-container-button"
+          onClick={() => handleClick(taco)}
+          type="submit"
+        >
           Add To Cart
         </button>
       </div>

@@ -18,7 +18,6 @@ export default function TacoOrderCard(props) {
       { fields: { orderid: stringObject } },
       config
     );
-    console.log(sendOrderAirtable);
     history.push("/receipt/" + sendOrderAirtable.data.id);
   }
 

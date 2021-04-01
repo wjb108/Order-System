@@ -36,12 +36,12 @@ function App() {
        return { ...prevState, [taco.id]: prevTaco };
      });
     } else {
-      if (count != 0) {
+      if (count !== 0) {
         setCount((prevState) => {
           return prevState - 1;
         }); 
       }
-      if (cart[taco.id].quantity != 0) {
+      if (cart[taco.id].quantity !== 0) {
         setCart((prevState) => {
           const prevTaco = prevState[taco.id]
             ? { ...prevState[taco.id] }

@@ -13,7 +13,6 @@ export default function Receipt() {
 
   async function retrieveOrder() {
     let response = await axios.get(orderBaseURL, config);
-    console.log(response.data.records);
     setOrderNumber(response.data.records);
   }
 
@@ -23,10 +22,8 @@ export default function Receipt() {
       <div className="receipt-tacos-container">
         {Object.keys(orderNumber).map((key) => {
           const orderId = orderNumber[key].id;
-          console.log(orderId);
           const orderInfo = orderNumber[key].fields.orderid;
           const orderInfoString = JSON.parse(orderInfo).orderTacos;
-          console.log(orderInfoString);
           return <ReceiptItem order={orderInfoString} id={orderId} />;
         })}
       </div>
