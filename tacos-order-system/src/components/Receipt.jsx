@@ -24,7 +24,7 @@ export default function Receipt() {
           const orderId = orderNumber[key].id;
           const orderInfo = orderNumber[key].fields.orderid;
           const orderInfoString = JSON.parse(orderInfo).orderTacos;
-          return <ReceiptItem order={orderInfoString} id={orderId} />;
+          return <ReceiptItem order={orderInfoString} key={key} id={orderId} />;
         })}
       </div>
     </div>

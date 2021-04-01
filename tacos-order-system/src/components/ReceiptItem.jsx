@@ -20,22 +20,18 @@ export default function ReceiptItem(props) {
             {Object.keys(order).map((key) => {
               const taco = order[key].fields;
               return (
-                <div className="receipt-taco-containerv1">
-                  <div className="receipt-taco-text-containerv2">
-                    <div className="receipt-taco-text">
-                      <br></br>
-                      <div className="receipt-taco-text-title">
-                        {`Name: ${taco.title}`}
-                      </div>
-                      <br></br>
-                      <div className="receipt-taco-text-quantity">
-                        {`Quantity: ${order[key].quantity}`}
-                      </div>
-                      <br></br>
-                      <div className="receipt-taco-text-price">
-                        {`Subtotal: $${taco.price * order[key].quantity}.00`}
-                      </div>
-                    </div>
+                <div key={key} className="receipt-taco-text">
+                  <br></br>
+                  <div className="receipt-taco-text-title">
+                    {`Name: ${taco.title}`}
+                  </div>
+                  <br></br>
+                  <div className="receipt-taco-text-quantity">
+                    {`Quantity: ${order[key].quantity}`}
+                  </div>
+                  <br></br>
+                  <div className="receipt-taco-text-price">
+                    {`Subtotal: $${taco.price * order[key].quantity}.00`}
                   </div>
                 </div>
               );

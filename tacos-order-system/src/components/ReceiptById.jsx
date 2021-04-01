@@ -11,6 +11,7 @@ export default function ReceiptById() {
 
   useEffect(() => {
     retrieveOrder();
+    // eslint-disable-next-line
   }, []);
 
   async function retrieveOrder() {

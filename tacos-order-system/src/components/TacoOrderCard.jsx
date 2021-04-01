@@ -43,7 +43,11 @@ export default function TacoOrderCard(props) {
       </div>
       <div className="order-tacos-container">
         {Object.keys(orderTacos).map((key) => (
-          <CartItem item={orderTacos[key]} handleClick={handleClick} />
+          <CartItem
+            item={orderTacos[key]}
+            handleClick={handleClick}
+            key={key}
+          />
         ))}
       </div>
     </div>

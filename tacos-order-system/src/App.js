@@ -69,7 +69,7 @@ function App() {
       </Route>
       <Route exact path="/">
         <div className="tacos-container">
-          {tacos.map((taco) => <MenuItem taco={taco} handleClick={handleClick}/> )}
+          {tacos.map((taco) => <MenuItem taco={taco} key={taco.id} handleClick={handleClick}/> )}
         </div>
       </Route>
     </div>
