@@ -3,7 +3,9 @@ import { useHistory } from "react-router-dom";
 import { orderBaseURL, config } from "../services/index";
 import CartItem from "../components/CartItem";
 
-export default function TacoOrderCard({ orderTacos }) {
+export default function TacoOrderCard(props) {
+  const { orderTacos, handleClick } = props;
+
   // console.log(Object.keys(orderTacos));
   // console.log(JSON.stringify(orderTacos));
 
@@ -42,7 +44,7 @@ export default function TacoOrderCard({ orderTacos }) {
       </div>
       <div className="order-tacos-container">
         {Object.keys(orderTacos).map((key) => (
-          <CartItem item={orderTacos[key]} />
+          <CartItem item={orderTacos[key]} handleClick={handleClick} />
         ))}
       </div>
     </div>

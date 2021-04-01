@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
 }
 .nav-container {
   /* background-color: red; */
@@ -106,6 +110,9 @@ a:link {
 }
 .order-tacos-container {
   /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .order-taco-container {

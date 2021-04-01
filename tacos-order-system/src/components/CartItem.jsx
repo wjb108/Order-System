@@ -1,5 +1,5 @@
 export default function CartItem(props) {
-  const { item } = props;
+  const { item, handleClick } = props;
   const taco = item.fields;
   return (
     <div className="order-taco-container">
@@ -12,7 +12,13 @@ export default function CartItem(props) {
           <div className="order-taco-text-title">{`Name: ${taco.title}`}</div>
           <br></br>
           <div className="order-taco-text-quantity">
-            {`Quantity: ${item.quantity}`}
+            {`Quantity: ${item.quantity} `}
+            <button onClick={() => handleClick(item)} type="submit">
+              +
+            </button>
+            <button onClick={() => handleClick(item, false)} type="submit">
+              -
+            </button>
           </div>
           <br></br>
           <div className="order-taco-text-price">

@@ -23,17 +23,34 @@ function App() {
     setTacos(response.data.records);
   }
 
-  function handleClick(taco) {
-    setCount((prevState) => {
-      return prevState + 1;
-    });
-    setCart((prevState) => {
-      const prevTaco = prevState[taco.id]
-        ? { ...prevState[taco.id] }
-        : { ...taco, quantity: 0 };
-      prevTaco.quantity++;
-      return { ...prevState, [taco.id]: prevTaco };
-    });
+  function handleClick(taco, add = true) {
+    if (add) {
+     setCount((prevState) => {
+       return prevState + 1;
+     });
+     setCart((prevState) => {
+       const prevTaco = prevState[taco.id]
+         ? { ...prevState[taco.id] }
+         : { ...taco, quantity: 0 };
+       prevTaco.quantity++;
+       return { ...prevState, [taco.id]: prevTaco };
+     });
+    } else {
+      if (count != 0) {
+        setCount((prevState) => {
+          return prevState - 1;
+        }); 
+      }
+      if (cart[taco.id].quantity != 0) {
+        setCart((prevState) => {
+          const prevTaco = prevState[taco.id]
+            ? { ...prevState[taco.id] }
+            : { ...taco, quantity: 0 };
+          prevTaco.quantity--;
+          return { ...prevState, [taco.id]: prevTaco };
+        });
+      }
+    }
   }
 
   return (
@@ -42,7 +59,7 @@ function App() {
         <Navbar count={count} />
       </Route>
       <Route path="/cart">
-        <TacoOrderCard orderTacos={cart} />
+        <TacoOrderCard orderTacos={cart} handleClick={handleClick} />
       </Route>
       <Route exact path="/receipt">
         <Receipt />
