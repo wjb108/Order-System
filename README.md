@@ -93,7 +93,7 @@ Components
 | April 01    | CSS                                                | Complete   |
 | April 02    | Presentations                                      | Complete   |
 
-## SWOT Analysis March 25, 2021
+## SWOT Analysis: March 25, 2021
 
 ### Strengths:
 
