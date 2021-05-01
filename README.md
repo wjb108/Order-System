@@ -31,6 +31,7 @@ Components
 - ReceiptItem.jsx
 
 <img src="./tacos-order-system/src/Components Chart.png">
+
 ## Airtable Sample Data
 
 
