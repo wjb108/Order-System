@@ -1,8 +1,6 @@
-# Taco-Order-System
+# Taco-Order-System [Deployed Link](https://606646b8e074aa00075436c5--determined-hodgkin-b7c031.netlify.app/)
 
 [![Overview Taco Order System](https://cdn.loom.com/sessions/thumbnails/06d6115dc6974976bea829e0e563362e-with-play.gif)](https://www.loom.com/share/06d6115dc6974976bea829e0e563362e "Overview Taco Order System")
-
-[Deployed Link](https://606646b8e074aa00075436c5--determined-hodgkin-b7c031.netlify.app/)
 
 ## Project Description
 
