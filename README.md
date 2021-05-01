@@ -1,8 +1,8 @@
 # Taco-Order-System
 
-[![Overview]({https://www.loom.com/embed/06d6115dc6974976bea829e0e563362e})]({https://www.loom.com/embed/06d6115dc6974976bea829e0e563362e} "Link Title")
+[![Overview]({https://www.loom.com/embed/06d6115dc6974976bea829e0e563362e.jpg})]({https://www.loom.com/embed/06d6115dc6974976bea829e0e563362e} "Link Title")
 
-[Link](https://606646b8e074aa00075436c5--determined-hodgkin-b7c031.netlify.app/)
+[Deployed Link](https://606646b8e074aa00075436c5--determined-hodgkin-b7c031.netlify.app/)
 
 ## Project Description
 
