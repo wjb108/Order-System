@@ -1,6 +1,6 @@
 # Taco-Order-System
 
-[![Overview Taco Order System](https://res.cloudinary.com/marcomontalbano/image/upload/v1619897854/video_to_markdown/images/video--b647f3f7c2315752cd4571ab7a3bb8bd-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://res.cloudinary.com/wjb108/video/upload/v1619897558/Overview-Taco-Order-System.mp4 "Overview Taco Order System")
+[![Overview Taco Order System](https://cdn.loom.com/sessions/thumbnails/06d6115dc6974976bea829e0e563362e-with-play.gif)](https://www.loom.com/share/06d6115dc6974976bea829e0e563362e "Overview Taco Order System")
 
 [Deployed Link](https://606646b8e074aa00075436c5--determined-hodgkin-b7c031.netlify.app/)
 
