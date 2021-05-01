@@ -1,6 +1,6 @@
 # Taco-Order-System
 
-[![Overview]({image-url})]({https://www.loom.com/share/06d6115dc6974976bea829e0e563362e} "Link Title")
+[![Overview]({https://www.loom.com/share/06d6115dc6974976bea829e0e563362e?sharedAppSource=personal_library})]({https://www.loom.com/share/06d6115dc6974976bea829e0e563362e} "Link Title")
 
 [Link](https://606646b8e074aa00075436c5--determined-hodgkin-b7c031.netlify.app/)
 
