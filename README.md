@@ -12,8 +12,6 @@ Taco order system for pickup orders. Will render taco image, title, price, quant
 
 ## Component Hierarchy
 
-App
-
 Components
 
 - Navbar.jsx
