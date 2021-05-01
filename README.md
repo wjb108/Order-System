@@ -1,6 +1,6 @@
 # Taco-Order-System
 
-[![Overview]({https://res.cloudinary.com/wjb108/image/upload/v1619897747/Screen_Shot_2021-05-01_at_3.35.22_PM_ln5q5v.png})]({https://res.cloudinary.com/wjb108/video/upload/v1619897558/Overview-Taco-Order-System.mp4} "Link Title")
+[![Overview Taco Order System](https://res.cloudinary.com/marcomontalbano/image/upload/v1619897854/video_to_markdown/images/video--b647f3f7c2315752cd4571ab7a3bb8bd-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://res.cloudinary.com/wjb108/video/upload/v1619897558/Overview-Taco-Order-System.mp4 "Overview Taco Order System")
 
 [Deployed Link](https://606646b8e074aa00075436c5--determined-hodgkin-b7c031.netlify.app/)
 
