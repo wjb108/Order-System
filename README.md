@@ -14,13 +14,15 @@ Taco order system for pickup orders. Will render taco image, title, price, quant
 
 App
 
-Components (need six!)
+Components
 
-- Navbar
-- Tacos List
-- Taco Card
-- Counter (separate or in other component?)
-- Order Sent
+- Navbar.jsx
+- MenuItem.jsx
+- CartItem.jsx
+- TacoOrderCards.jsx
+- Receipt.jsx
+- ReceiptById.jsx
+- ReceiptItem.jsx
 
 <img src="./tacos-order-system/src/Components Chart.png">
 ## API and Data Sample
@@ -63,14 +65,14 @@ Airtable API
 
 #### MVP
 
-- Render taco products data on page
-- Allow user to add taco to shopping cart with counter
-- Submit order
+- Render menu items from AirTable database
+- Allow user to add tacos to shopping cart with counter
+- Summary order page, can modify order quantity, and submit order
+- Receipt of order
+- Kitchen view of all orders
 
 #### PostMVP
 
-- U taco
-- D taco
 - useContext hook
 - Stripe integration
 
@@ -80,12 +82,12 @@ Airtable API
 | ----------- | -------------------------------------------------- | ---------- |
 | March 25-26 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
 | March 26    | Get Data                                           | Complete   |
-| March 26    | Project Approval                                   | Incomplete |
-| March 29-31 | Core Component Structure                           | Incomplete |
-| April 01    | CSS                                                | Incomplete |
-| April 02    | Presentations                                      | Incomplete |
+| March 26    | Project Approval                                   | Complete   |
+| March 29-31 | Core Component Structure                           | Complete   |
+| April 01    | CSS                                                | Complete   |
+| April 02    | Presentations                                      | Complete   |
 
-## SWOT Analysis
+## SWOT Analysis March 25, 2021
 
 ### Strengths:
 
