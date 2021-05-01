@@ -5,7 +5,7 @@
 
 🌮 Taco order system for pickup orders
 
-📁 Render data from AirTable API with menu items with fields: image, title, price, quantity, description
+📁 Render data from AirTable API with menu items with fields: image, title, price, description
 
 🥡 Select number of tacos to shopping cart, modify order quantity if desired, submit order and receive receipt
 
